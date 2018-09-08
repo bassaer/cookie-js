@@ -48,5 +48,7 @@ tags
 # Persistent undo
 [._]*.un~
 
+# virtualenv
+/py27
 
 # End of https://www.gitignore.io/api/vim,macos
