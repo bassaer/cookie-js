@@ -8,7 +8,7 @@ class Redirector(SimpleHTTPServer.SimpleHTTPRequestHandler):
         query = urlparse.parse_qs(params.query)
         location = 'http://www.example.com'
         if 'go' in query:
-            location = query['go'][0]
+            location = query['go'][0] + '?p=hoge'
         print query
         print 'redirected to %s' % location
         self.send_response(301)
